@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic-Tac-Toe</h1>
+        <div class="game">
+            <div class="board" id="board">
+                <!-- Adding onclick property to each cell -->
+                <div class="cell" data-index="0" onclick="cellClick(this)"></div>
+                <div class="cell" data-index="1" onclick="cellClick(this)"></div>
+                <div class="cell" data-index="2" onclick="cellClick(this)"></div>
+                <div class="cell" data-index="3" onclick="cellClick(this)"></div>
+                <div class="cell" data-index="4" onclick="cellClick(this)"></div>
+                <div class="cell" data-index="5" onclick="cellClick(this)"></div>
+                <div class="cell" data-index="6" onclick="cellClick(this)"></div>
+                <div class="cell" data-index="7" onclick="cellClick(this)"></div>
+                <div class="cell" data-index="8" onclick="cellClick(this)"></div>
+            </div>
+            <div class="status" id="status">Player X's turn</div>
+            <button class="reset-button" id="reset" onclick="resetGame()">New Game</button>
+        </div>
+    </div>
+    <div class="result-screen" id="result-screen">
+        <div class="result-content">
+            <h2 class="result-title" id="result-title"></h2>
+            <button class="new-game-button" id="new-game-button" onclick="newGame()">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
